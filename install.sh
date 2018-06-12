@@ -9,7 +9,7 @@ function statusBanner
     echo ""
 }
 
-statusBanner "This script will setup INDI on cygwin after cygwin and the dependencies are installed using the install.bat script"
+statusBanner "This script will setup INDI on Windows Subsystem for Linux after Windows Subsystem for Linux is installed"
 
 read -p "Are you ready to proceed (y/n)? " proceed
 
@@ -48,3 +48,5 @@ sudo -H pip install wheel
 
 # This will install INDI Web Manager
 sudo -H pip install indiweb
+
+statusBanner "Script Execution Complete"
